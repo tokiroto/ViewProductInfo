@@ -1,16 +1,16 @@
 {
   "nativescript": {
-    "id": "org.nativescript.ViewProductInfo",
-    "tns-android": {
-      "version": "6.3.1"
-    },
+    "id": "org.wasalakegasandfood.ViewProductInfo",
     "tns-ios": {
       "version": "6.3.0"
+    },
+    "tns-android": {
+      "version": "6.3.1"
     }
   },
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
+  "description": "Application for working with remote exel file db",
+  "license": "MIT",
+  "repository": "https://github.com/tokiroto/ViewProductInfo",
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/common": "~8.2.0",
@@ -34,5 +34,5 @@
     "typescript": "~3.5.3"
   },
   "gitHead": "fa98f785df3fba482e5e2a0c76f4be1fa6dc7a14",
-  "readme": "NativeScript Application"
+  "readme": "README.md"
 }
