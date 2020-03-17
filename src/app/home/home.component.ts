@@ -1,16 +1,26 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from '../@core/base/base.component';
+import { RouterExtensions as Router } from 'nativescript-angular/router';
 
 @Component({
-    selector: "Home",
-    templateUrl: "./home.component.html"
+    selector: 'Home',
+    templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent extends BaseComponent implements OnInit {
 
-    constructor() {
-        // Use the component constructor to inject providers.
+    constructor(router: Router) {
+        super(router);
     }
 
     ngOnInit(): void {
-        // Init your component properties here.
+        
+    }
+
+    /**
+     * Opens route by name
+     * @param routeName - route url
+     */
+    openPage(routeName: string): void {
+        this.router.navigateByUrl(`/${routeName}`);
     }
 }
