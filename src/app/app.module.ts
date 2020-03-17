@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        CoreModule
+        CoreModule.forRoot()
     ],
     declarations: [
         AppComponent

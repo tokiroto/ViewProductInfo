@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BaseComponent } from '../@core/base/base.component';
+import { BaseComponent } from '../../@core/base/base.component';
 import { RouterExtensions as Router } from 'nativescript-angular/router';
 
 @Component({
