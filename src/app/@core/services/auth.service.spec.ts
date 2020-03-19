@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DriveService } from './drive.service';
+import { AuthService } from './auth.service';
 
-describe('DriveService', () => {
-  let service: DriveService;
+describe('AuthService', () => {
+  let service: AuthService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.get(DriveService);
+    service = TestBed.get(AuthService);
   });
 
   it('should be created', () => {

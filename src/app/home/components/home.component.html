@@ -1,7 +1,8 @@
 <ActionBar>
-    <Label text=""></Label>
+    <Label text="Logged user: {{email}}"></Label>
 </ActionBar>
 
-<GridLayout>
-    <!-- Add your page content here -->
+<GridLayout rows="auto, auto, auto">
+    <Button row="0" text="Open File"></Button>
+    <Button row="1" text="LogOff" (tap)="LogOff()"></Button>
 </GridLayout>

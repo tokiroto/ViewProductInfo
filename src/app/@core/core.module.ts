@@ -3,6 +3,9 @@ import { NativeScriptCommonModule } from 'nativescript-angular/common';
 
 import { BaseComponent } from './base/base.component';
 import { DriveService } from './services/drive.service';
+import { LocalstorageService } from './services/localstorage.service';
+import { AuthGuard } from './services/auth.guard';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [BaseComponent],
@@ -16,7 +19,10 @@ export class CoreModule {
     return {
       ngModule: CoreModule,
       providers: [
-        DriveService
+        DriveService,
+        LocalstorageService,
+        AuthGuard,
+        AuthService
       ]
     }
   }

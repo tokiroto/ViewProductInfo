@@ -4,6 +4,7 @@ import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { CoreModule } from './@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
     bootstrap: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        CoreModule.forRoot()
+        LoginModule.forRoot(),
+        CoreModule.forRoot(),
     ],
     declarations: [
         AppComponent
