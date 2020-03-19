@@ -28,6 +28,10 @@ export class HomeComponent extends BaseComponent implements OnInit, AfterViewIni
         this.router.navigate(['/login'], { clearHistory: true });
     }
 
+    OpenFile(): void {
+        this.driveService.openFilePicker();
+    }
+
     /**
      * Opens route by name
      * @param routeName - route url

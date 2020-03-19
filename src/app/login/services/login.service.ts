@@ -1,4 +1,4 @@
-import { Injectable, EventEmitter, OnDestroy } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { DriveService } from '~/app/@core/services/drive.service';
 import { RouterExtensions as Router } from 'nativescript-angular/router';
 import { BaseService } from '~/app/@core/base/base.service';

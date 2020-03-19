@@ -11,7 +11,7 @@ import { AlertOptions, alert as showAlert } from 'tns-core-modules/ui/dialogs';
 export class BaseComponent implements OnInit {
 
   isLoading = false;
-  
+
   constructor(public router: Router) { }
 
   ngOnInit(): void {
@@ -39,7 +39,7 @@ export class BaseComponent implements OnInit {
    * @param message string
    * @param duration enum(long, short)
    */
-  showToast(message: string, duration: 'long'|'short'): void {
+  showToast(message: string, duration: 'long' | 'short'): void {
     Toast.makeText(message, duration).show();
   }
 }
